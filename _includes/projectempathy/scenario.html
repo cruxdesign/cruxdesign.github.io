@@ -1,0 +1,116 @@
+<div id="scenario" class="container-fluid">
+    <div class="row">
+        <div class="scene-1">
+            <div class="header-section floating-position">
+                <h1 class="header-title stylized text-center">Project Empathy</h1>
+            </div>
+            <div class="content floating-position">
+                <div class="col-md-5">
+                    <h2 class="stylized content-title">What is Empathy</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>1: The imaginative projection of a subjective state into an object so that the object appears to be infused with it.</p>
+                    <p>2: The action of understanding, being aware sensitive to, and vicariously experiencing the feelings, thoughts, and experience of another of either the past or present without having the feelings, thoughts, and experience fully communicated in an objectively explicit manner, also: the capacity for this.</p>
+                </div>
+            </div>
+
+            <div class="section-header floating-position">
+                <h1 class="section-text text-center stylized" data-sr="wait 0.2s">Empathy =/= Sympathy</h1>
+            </div>
+        </div>
+
+        <div class="scene-2">
+            <div class="character-container floating-position">
+                <div class="character-section col-md-6">
+                    <div class="character-left">
+                        <img data-sr="wait 0.2s" class="character center-block" src="/img/projectempathy/character/sympathizer-01.png"/>
+                        <div class="message-content-left">
+                            <img data-sr="wait 0.4s" src="/img/projectempathy/cloud/bubble-left.png" height="150px"/>
+                            <span class="stylized floating-position">At least you're able to afford therapy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-section col-md-6">
+                    <div class="character-right">
+                        <img data-sr="wait 0.4s" class="character center-block" src="/img/projectempathy/character/sympathizer-02.png"/>
+                        <div class="message-content-right">
+                            <img data-sr="wait 0.6s" src="/img/projectempathy/cloud/bubble-right.png" height="150px"/>
+                            <span class="stylized floating-position">At least you're not homeless.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="character-center">
+                <div class="character-center-container">
+                    <!--<span data-stellar-ratio="0.5" class="stylized">Help Me :(</span>-->
+                    <img data-stellar-ratio="0.5" src="/img/projectempathy/character/person-darkhole.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="scene-3">
+            <div class="text-container floating-position">
+                <h1 data-sr="wait 0.2s" class="text-center stylized">Rarely does an Empathic Response begin with "At Least."</h1>
+            </div>
+            <div class="content floating-position">
+                <h1 data-sr="wait 0.2s" class="stylized text-center">The Four Qualities of Empathy</h1>
+                <ol data-sr="wait 0.4s">
+                    <li>Perspective-Taking or the ability to take on the perspective of another.</li>
+                    <li>Recognize their perspective as truth.</li>
+                    <li>Staying out of judgement</li>
+                    <li>Recognising emotion in other people and communicating that.</li>
+                </ol>
+            </div>
+            <div class="section-header header floating-position">
+                <h1 data-sr="wait 0.2s" class="section-text stylized text-center">The Three Types of Empathy</h1>
+            </div>
+            <div class="empathy-type floating-position">
+                {% for empathyType in site.data.empathy-types %}
+                <div  data-sr="wait 0.2s" class="type-container">
+                    <span class="type-number">{{ empathyType.id }}</span>
+                    <span class="type-title">{{ empathyType.title }}</span>
+                    <span class="type-description">
+                        <ul style="list-style-image: url('/img/projectempathy/leaf-bullet.png');">
+                            <li>{{ empathyType.description }}</li>
+                        </ul>
+                    </span>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="section-header-2 floating-position">
+                <h1 data-sr="wait 0.2s" class="section-text stylized text-center">Why is Empathy so Important?</h1>
+            </div>
+            <div class="globe-container floating-position">
+            <img  class="center-block globe"  height="500px" src="/img/projectempathy/globe.png"/>
+            <h1 class="stylized text-center floating-position">It's Good for Everyone!</h1>
+            </div>
+            <div class="section-quotes floating-position">
+                <span class="quotes" data-sr="wait 0.2s">Our richest experiences occur when we embrace emotional complexity and cultivate empathy. <span data-sr="wait 0.4s">-Jessica Weavers</span></span>
+            </div>
+        </div>
+        <div class="scene-4">
+            <div class="section-content-1 floating-position">
+                <h1 data-sr="wait 0.2s" class="stylized text-center">The Dark Side of Empathy</h1>
+                <hr data-sr="wait 0.3s">
+                <ol data-sr="wait 0.4s">
+                    <li>Sociopaths can use this to their advantage.</li>
+                    <li>Can cause people to become emotionally overwhelmed.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="scene-5">
+            <div class="section-text floating-position">
+                <h1 data-sr="wait 0.2s" class="stylized text-cente">So how do you become more empathic?</h1>
+            </div>
+            <div class="section-quotes floating-position">
+                <span class="quotes floating-position" data-sr="wait 0.2s">Step outisde of your world, and step in another and do it over and over.. <br/> <span data-sr="wait 0.4s">-Sam Richards (TEDxPSU)</span></span>
+            </div>
+            {% for empathic in site.data.empathic %}
+            <div class="content-container-{{ empathic.id }} floating-position">
+                <img data-sr="wait 0.2s" src="{{ empathic.image }}" class="center-block" height="300px"/>
+                <h1 class="stylized">{{ empathic.id }}.{{ empathic.title }}</h1>
+                <p>{{ empathic.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

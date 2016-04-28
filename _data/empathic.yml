@@ -1,0 +1,19 @@
+- id: 1
+  image: /img/gif/empathy-icon01.gif
+  title: Active Listening
+  description: Express active interest in what the other person has to say and make him/her feel heard.
+
+- id: 2
+  image: /img/gif/empathy-icon02.gif
+  title: Shared Identity
+  description: Think of a person very different from you and then list what you have in common.
+
+- id: 3
+  image: /img/gif/empathy-icon03.gif
+  title: Put on a human face of suffering
+  description: When reading/watching the news, look for profiles of specific individuals and imagine what their lives were like.
+
+- id: 4
+  image: /img/gif/empathy-icon04.gif
+  title: Eliciting Altruism
+  description: Create reminders of connectedness.
