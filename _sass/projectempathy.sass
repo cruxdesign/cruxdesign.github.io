@@ -43,6 +43,20 @@ body
       transform: translateY(-79.5%)
       .section-text
         color: white
+    .left-text-container
+      position: absolute
+      transform: translateY(-50%)
+      left: 5%
+      img
+
+        height: 200px
+    .right-text-container
+      position: absolute
+      transform: translateY(-50%)
+      right: 5%
+      img
+        height: 200px
+
 
   .scene-2
     position: relative
@@ -200,6 +214,36 @@ body
         -moz-transform: translateY(-50%)
         -o-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
+      .small-shape
+        ul
+          list-style: none
+          padding-left: 0
+          .floating-image
+            position: absolute
+            &.item-1
+              top: 2%
+              transform: translateY(-2%)
+              left: 5%
+              img
+                height: 200px
+            &.item-2
+              top: 2%
+              transform: translateY(-2%)
+              right: 5%
+              img
+                height: 200px
+            &.item-3
+              bottom: 2%
+              transform: translateY(-2%)
+              left: 5%
+              img
+                height: 200px
+            &.item-4
+              bottom: 2%
+              transform: translateY(-2%)
+              right: 5%
+              img
+                height: 200px
     .section-quotes
       top: 93.2%
       transform: translateY(-93.2%)
