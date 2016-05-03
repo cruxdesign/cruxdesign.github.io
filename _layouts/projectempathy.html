@@ -26,6 +26,18 @@
 <script type="text/javascript" src="/js/jquery.stellar.js"></script>
 
 <script type="text/javascript">
+    var shape = $('.small-shape')
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= $(".globe").offset().top -200){
+            var numberOfShape = shape.find('li').size();
+            shape.find('li').each(function(index){
+                $(this).addClass('transition'+(index+1)+'-'+numberOfShape);
+            });
+        }
+    });
+</script>
+
+<script type="text/javascript">
     window.sr = new scrollReveal();
 </script>
 
@@ -35,6 +47,7 @@
         $('.fakeScroll').fakeScroll();
     });
 </script>
+
 
 <script type="text/javascript">
     $(document).ready(function(){
