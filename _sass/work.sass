@@ -1,0 +1,157 @@
+@import "navbar"
+@import "footer"
+
+
+
+#cover-section
+  height: 500px
+  background-size: cover !important
+  background-position: center !important
+  width: 100% !important
+  #cover-logo
+    max-height: 50%
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    margin: 0 auto
+
+
+#project-cover-video
+  position: relative
+  background-color: black
+  .video-container
+    position: relative
+    height: inherit
+    &.video-on-show
+      padding-bottom: 47% !important
+      height: 0 !important
+    .video-menu-container
+      position: relative
+      .video-image
+        width: 100%
+        height: auto
+        z-index: 5
+      #video-button
+        cursor: pointer
+        z-index: 10
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        -webkit-transform: translateY(-50%)
+        -moz-transform: translateY(-50%)
+        -o-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        height: 20%
+        left: 0
+        right: 0
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      max-height: 100vh
+
+#project-section
+  position: relative
+  border-bottom: 1px solid #A7A7A7
+  max-width: 1440px
+  .project-title-section
+    margin: 2% 0
+    .project-title
+      color: black
+      font-family: "Bebas"
+      display: block
+      font-size: 36px
+    .project-type
+      font-family: inherit
+      display: block
+      margin-bottom: 2%
+      font-size: 12px
+      letter-spacing: 1px
+    .social-widget-container
+      list-style: none
+      padding-left: 0
+      margin-bottom: 0
+      .social-item
+        display: inline-block
+        vertical-align: middle
+        &:nth-child(2)
+          margin: 0 5%
+        .social-image
+          height: 32px
+        //  temporary
+        [src="/img/project/website/icon_link.png"]
+          height: 43px !important
+
+  .project-client-section
+    margin: 1% 0
+    .project-info-container
+      list-style: none
+      padding-left: 0
+      margin-bottom: 0
+      .project-info-item
+        .project-info-type
+          font-weight: bold
+          color: black
+          font-size: 11px
+          display: block
+          margin: 2% 0
+        .project-info-name
+          margin: 2% 0
+          display: block
+          font-size: 14px
+          color: black
+
+  .project-type-section
+    background: url('/img/project/website/project-info-bg.png')
+    background-repeat: no-repeat
+    background-color: #333
+    height: 199px
+    .project-type-icon
+      height: 40px
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      margin: 0 auto
+      display: table
+
+#project-detail-section
+  #section-row
+    margin: 2% 0
+    #section-header
+      text-transform: uppercase
+      font-weight: bold
+    .project-detail-description
+      line-height: 25px
+      max-width: 80%
+    .project-process-container
+      list-style: none
+      padding-left: 0
+      border-left: 1px solid #A7A7A7
+      .project-process-item
+        font-size: 14px
+        margin: 0 5% 10%
+        display: block
+
+#project-slider
+  background-color: #ecf0f1
+  .slider-item
+    height: 200px
+    padding: 5%
+
+#project-related-section
+  background-color: #333333
+  #section-header
+    color: #ffffff
+    text-transform: uppercase
+  .related-item-container
+    .related-item
+      float: left
+      .related-image
+        margin: 2% 0
+      .related-title
+        color: #ffffff
+        text-align: center
+        display: block
+        margin: 5% 0

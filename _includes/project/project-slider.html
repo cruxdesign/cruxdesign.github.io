@@ -1,0 +1,9 @@
+<div id="project-slider-section" class="container-fluid">
+    <div class="row">
+        <div id="project-slider" class="owl-carousel owl-theme">
+            {% for projectImage in page.project-slider %}
+                <img class="slider-item" src="{{ projectImage.image }}"/>
+            {% endfor %}
+        </div>
+    </div>
+</div>

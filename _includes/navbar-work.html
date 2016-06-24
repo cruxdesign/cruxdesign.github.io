@@ -1,0 +1,81 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <img class="nav-logo" src="https://res.cloudinary.com/design-studio/image/upload/assets/logo/crux-brand-inverse.png"/>
+                </a>
+                <div class="nav-right-container">
+                    <ul class="nav navbar-right">
+                        <li id="project-menu">
+                            <span class="toggle-planner">START A PROJECT</span>
+                        </li>
+                        <li id="menu-list">
+                            <button type="button" id="icon-transition" class="toggle-nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="body-planner">
+                <div class="form-container">
+                    <button type="button" class="close-menu toggle-planner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="container">
+                        <form id="planner-form" autocomplete="off" class="form-group" method="POST">
+                            <input type="text" class="input-item form-control" name="name" placeholder="Name" required>
+                            <input type="email" class="input-item form-control" name="_replyto" placeholder="Email" required>
+                            <!--<input type="text" class="input-item form-control" name="project" placeholder="Project" required>-->
+
+                            <div class="dropdown">
+                                <input name="project-type" placeholder="Select Project Type" class="input-item form-control" type="text" id="project-list" data-toggle="dropdown" readonly/>
+                                <ul class="dropdown-menu" aria-labelledby="project-list">
+                                    {% for projectOffer in site.data.projectOffer %}
+                                    <li class="project-item">{{ projectOffer.title }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                            <textarea type="text" class="input-item form-control" name="description" placeholder="Brief Description" required></textarea>
+
+                            <!-- for url redirecting-->
+                            <input type="hidden" name="_next" value="{{ page.url }}" />
+                            <input type="hidden" name="_subject" value="New submission!" />
+                            <input id="testEmail" type="text" name="_gotcha"/>
+                            <button type="submit" class="button-submit" value="Send">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="body-nav">
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        {% for media in site.data.socialMedia %}
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="{{ media.image }}"/>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
