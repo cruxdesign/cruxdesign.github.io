@@ -1,21 +1,10 @@
 <div id="project-detail-section" class="container no-gutter">
-    <div id="section-row" class="row">
-        <h4 id="section-header">Project Details</h4>
-        {% for projectDescription in page.project-detail %}
-        <div class="col-md-4">
-            <div class="row">
-                <p class="project-detail-description">{{ projectDescription.description }}</p>
-            </div>
+    <div id="section-row">
+        {% for project-description in page.project-detail %}
+        <div class="col-md-6">
+            <h4 id="section-header">{% cycle 'Overview', 'Strategy' %}</h4>
+            <p class="project-detail-description">{{ project-description.description }}</p>
         </div>
         {% endfor %}
-        <div class="col-md-4">
-            <ul class="project-process-container">
-                {% for projectProcess in page.project-process %}
-                <li class="project-process-item">
-                    <span>{{ projectProcess.title }}</span>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
     </div>
 </div>
