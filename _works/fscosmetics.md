@@ -6,40 +6,28 @@ workUrl: works/fscosmetics
 title: "FS COSMETICS"
 type: "Web Design & Dev"
 image: fscosmetics-work.jpg
-class: p6
+work-link: "www.fscosmetics.com"
 
-cover-logo: https://res.cloudinary.com/design-studio/image/upload/project/website/fscosmetics/cover-logo.png
-social-media:
-    - url: https://www.google.com
-      social-icon: /img/project/website/icon_twitter.png
-      
-    - url: https://www.google.com
-      social-icon: /img/project/website/icon_link.png
-    
-    - url: https://www.google.com
-      social-icon: /img/project/website/icon_facebook.png  
+cover-bg: https://res.cloudinary.com/design-studio/image/upload/project/website/fscosmetics/about_cover.jpg
+
 work-info:
-    - type: Client
-      name: FS Cosmetics
-
     - type: Web Designer
-      name: Nicole Lopuz
+      work-contributor:
+        - name: Nicole Lopuz
 
     - type: Web Developer
-      name: Rens Ramos<br/>Ruel Aballe
+      work-contributor:
+        - name: Rens Ramos
+        - name: Ruel Aballe
       
 project-type-icon: '/img/project/website/web_icon.png'
 
 project-detail:
     - description: FS Cosmetics has not lost sight of its focus in providing high quality cosmetics suitable for the Filipina skin at prices that ensured the value always been in favor of the consumer
                    <br/><br/> FS Cosmetics wants to improve their brand and strengthen their online presence. They want to look and be perceived as classy and sophisticated.
-    - description: Using their new brand, we improved both the look and aesthetic of their website. Keeping in mind about their aim to look classy and sophisticated, we implemented a minimalistic yet elegant approach.
+                   <br/><br/> Using their new brand, we improved both the look and aesthetic of their website. Keeping in mind about their aim to look classy and sophisticated, we implemented a minimalistic yet elegant approach.
 
-project-process:
-    - title: Wireframe
-    - title: Color Palette
-    - title: Typography
-    - title: Responsive Design
+    - description: FS Cosmetics reach outs to loyal customers and new ones through showcasing there newest additions and newly formulated products through a series of web pages. Subtle animation and smooth scrolling to create sophisticated atmosphere. Black is the main aesthetic for FS cosmetics showing an identity of an independent, strong and powerful woman. FS Cosmetic website dressed to compel high class filipina women as well as give satisfactory experience with users. 
 
 project-slider:
     - image: https://res.cloudinary.com/design-studio/image/upload/project/website/fscosmetics/slides/img2.jpg
